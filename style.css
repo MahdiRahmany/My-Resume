@@ -588,11 +588,21 @@ img {
 /* ----------------------------- Contact ---------------------- */
 .contact__container {
   row-gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.content-flex{
+.content-block {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  margin-bottom: var(--mb-1);
+}
+
+.content-block > i{
+  font-size: 1.5rem;
+  color: var(--first-color);
 }
 
 .contact__input {
@@ -627,7 +637,7 @@ img {
 .contact__subtitle {
   font-size: var(--h3-font-size);
   color: var(--first-color-dark);
-  margin-bottom: var(--mb-1);
+  margin-left: 1rem;
 }
 
 .contact__text {
@@ -675,7 +685,7 @@ img {
   color: var(--text-color);
 }
 
-.footer-center{
+.footer-center {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -695,6 +705,7 @@ img {
   .skills__container,
   .services__container,
   .works__container,
+  .contact__container,
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -801,5 +812,10 @@ img {
   .services__container,
   .works__container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .content-flex {
+    display: flex;
+    justify-content: space-around;
   }
 }
