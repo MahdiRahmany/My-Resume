@@ -600,7 +600,7 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-.content-block > i{
+.content-block > i {
   font-size: 1.5rem;
   color: var(--first-color);
 }
